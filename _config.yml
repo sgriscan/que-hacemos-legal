@@ -1,0 +1,9 @@
+# Textos legales de ¿Qué hacemos? — publicados con GitHub Pages.
+# Sin tema a propósito: los temas de Jekyll cargan recursos externos
+# (fuentes, scripts) que la CSP del layout bloquearía. Ver _layouts/default.html.
+title: ¿Qué hacemos? — Legal
+lang: es
+permalink: pretty
+markdown: kramdown
+exclude:
+  - README.md

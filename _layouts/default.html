@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSP (spec 007, T50): GitHub Pages no permite configurar headers de
+       respuesta, así que va por <meta>. Solo recursos del mismo origen: ni
+       scripts, ni fuentes, ni estilos externos o inline. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+  <title>{{ page.title }} — ¿Qué hacemos?</title>
+  <link rel="stylesheet" href="{{ '/assets/estilo.css' | relative_url }}">
+</head>
+<body>
+  <main>
+    <p class="version">{{ page.etiqueta_version }} {{ page.version }} · {{ page.etiqueta_vigencia }} {{ page.vigente_desde }}</p>
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </main>
+</body>
+</html>
